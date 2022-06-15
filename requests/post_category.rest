@@ -1,0 +1,45 @@
+POST http://localhost:3001/api/categorys
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDEwOTMwNiwiZXhwIjoxNjU0NzE0MTA2fQ.mK9Bxbds1XNRRfl51f2pJjsu1uZ30dWTklcx5Bn9eo0
+
+{
+  "idName" : "ESTAMPADOS-MUJER",
+  "categoryName": "ESTAMPADOS",
+  "type": "MUJER",
+  "isActive": false,
+  "newCategory": true,
+  "discount": true,
+  "position": 1
+}
+
+###
+
+POST http://localhost:3001/api/categorys
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDEwOTMwNiwiZXhwIjoxNjU0NzE0MTA2fQ.mK9Bxbds1XNRRfl51f2pJjsu1uZ30dWTklcx5Bn9eo0
+
+{
+  "idName" : "LINO-MUJER",
+  "categoryName": "LINO",
+  "type": "MUJER",
+  "isActive": false,
+  "newCategory": true,
+  "discount": true,
+  "position": 1
+}
+
+###
+
+POST http://localhost:3001/api/categorys
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDEwOTMwNiwiZXhwIjoxNjU0NzE0MTA2fQ.mK9Bxbds1XNRRfl51f2pJjsu1uZ30dWTklcx5Bn9eo0
+
+{
+  "idName" : "PRIMAVERA-MUJER",
+  "categoryName": "PRIMAVERA",
+  "type": "MUJER",
+  "isActive": false,
+  "newCategory": true,
+  "discount": true,
+  "position": 1
+}

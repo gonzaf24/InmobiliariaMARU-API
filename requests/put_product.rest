@@ -1,0 +1,21 @@
+PUT http://localhost:3001/api/products/62a11e09d5472d6ff5f43948
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDcyMjg2NSwiZXhwIjoxNjU1MzI3NjY1fQ.N71dplGoVaZNVyddu4f2bKMVwNp_nLR9PGNpgBPdkXI
+
+{
+  "ref": "2234525235",
+  "nameCategory": "ESTAMPADOS",
+  "description": "Es una chaqueta gorda y flaca ",
+  "colors": [ "ROJO" , "azul" ],
+  "sizes": [ "S" , "XL" ],
+  "photos": [ "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" , "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" ],
+  "sizesDescriptions": [{ "data": "Ancho de manga", "description": "60cm" }, { "data": "Cuello", "description": "En V" }],
+  "isActive": true,
+  "newProduct": true,
+  "discount": "33%",
+  "position": 2,
+  "precioUY": "520",
+  "precioES": "3",
+  "precioUSD": "5",
+  "id": "62a11e09d5472d6ff5f43948"
+}

@@ -1,0 +1,14 @@
+PUT http://localhost:3001/api/categorys/62a0d2c366ba39675bf50a6a
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDcyMjg2NSwiZXhwIjoxNjU1MzI3NjY1fQ.N71dplGoVaZNVyddu4f2bKMVwNp_nLR9PGNpgBPdkXI
+
+{
+    "idName": "ESTAMPADOS-MUJER",
+    "categoryName": "ESTAMPADOS DDSS",
+    "type": "MUJER",
+    "isActive": true,
+    "newCategory": true,
+    "discount": true,
+    "position": 0,
+    "id": "62a0d2c366ba396s75bf50a2342346a11"
+}

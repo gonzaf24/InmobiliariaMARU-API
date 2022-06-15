@@ -1,0 +1,44 @@
+POST http://localhost:3001/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDcyMjg2NSwiZXhwIjoxNjU1MzI3NjY1fQ.N71dplGoVaZNVyddu4f2bKMVwNp_nLR9PGNpgBPdkXI
+
+{
+  "ref": "225566",
+  "nameCategory": "ESTAMPADOS",
+  "description": "Es una chaqueta gorda y flaca ",
+  "colors": [ "ROJO" , "azul" ],
+  "sizes": [ "S" , "XL" ],
+  "photos": [ "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" , "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" ],
+  "sizesDescriptions": [{ "data": "Ancho de manga", "description": "60cm" }, { "data": "Cuello", "description": "En V" }],
+  "isActive": true,
+  "newProduct": true,
+  "discount": "33%",
+  "position": 2,
+  "precioUY": "520",
+  "precioES": "3",
+  "precioUSD": "5"
+}
+
+
+###
+
+POST http://localhost:3001/api/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkYmVkYzY5NTY0MGYwY2Q4OSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY1NDcyMjg2NSwiZXhwIjoxNjU1MzI3NjY1fQ.N71dplGoVaZNVyddu4f2bKMVwNp_nLR9PGNpgBPdkXI
+
+{
+  "ref": "114488",
+  "nameCategory": "LINO",
+  "description": "Es una chaqueta gorda y flaca ",
+  "colors": [ "ROJO" , "VERDE" ],
+  "sizes": [ "M" , "L" ],
+  "photos": [ "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" , "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" ],
+  "sizesDescriptions": [{ "data": "Ancho de espalda", "description": "70cm" }, { "data": "Alto cintura a tobillo", "description": " 100cm" }],
+  "isActive": true,
+  "newProduct": true,
+  "discount": "22%",
+  "position": 2,
+  "precioUY": "520",
+  "precioES": "3",
+  "precioUSD": "5"
+}
