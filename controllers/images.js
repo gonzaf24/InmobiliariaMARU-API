@@ -17,7 +17,6 @@ const s3 = new S3({
 })
 
 imagesRouter.post('/', upload.single('image'), userExtractor, async (req, res) => {
-  console.log("ENTRO A AGREGAR IMAGEN ");
   try {
     let file = req.file
     const fileName = req.body.fileName

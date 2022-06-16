@@ -6,6 +6,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTdiNDJkY
   "ref": "2234525235",
   "nameCategory": "ESTAMPADOS",
   "description": "Es una chaqueta gorda y flaca ",
+  "detail": "Es una chaqueta gorda y flaca detail",
   "colors": [ "ROJO" , "azul" ],
   "sizes": [ "S" , "XL" ],
   "photos": [ "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" , "https://images.hola.com/imagenes/estar-bien/20180312121453/ropa-contamina-medio-ambiente/0-548-821/ropa-medioambiente-t.jpg" ],

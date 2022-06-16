@@ -16,7 +16,7 @@ const s3 = new S3({
 categorysRouter.post('/', userExtractor, async (request, response, next) => {
   try {
     const { body } = request
-    console.log("entro en post category ", body)
+    console.log("entro en post category ")
     const { idName, categoryName, type, isActive, newCategory, discount, position } = body
     const categoryToPersist = new Category({
       idName,
@@ -43,31 +43,8 @@ categorysRouter.post('/', userExtractor, async (request, response, next) => {
 
 })
 
-
-
-categorysRouter.get('/', userExtractor, async (request, response) => {
-
-  try {
-    var params = { Bucket: 'alchimia', Key: "79e414580e1adf5c97cdc9a97b1d0498" }
-    try {
-      await s3.headObject(params).promise()
-      console.log("File Found in S3")
-      try {
-        await s3.deleteObject(params).promise()
-        console.log("file deleted Successfully")
-        return "OK!"
-      }
-      catch (err) {
-        console.log("ERROR in file Deleting : " + JSON.stringify(err))
-      }
-    } catch (err) {
-      console.log("File not Found ERROR : " + err.code)
-    }
-
-  } catch (error) {
-    console.log("error delete ", error)
-  }
-
+categorysRouter.get('/', async (request, response) => {
+  console.log(" Entro en GET categorys")
   try {
     const categorys = await Category.find({})
     response.status(201).json(categorys)

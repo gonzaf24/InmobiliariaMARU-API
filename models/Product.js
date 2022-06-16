@@ -8,6 +8,7 @@ const productSchema = new Schema({
   },
   nameCategory: String,
   description: String,
+  detail: String,
   colors: [String],
   sizes: [String],
   photos: [String],
