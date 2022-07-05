@@ -65,7 +65,7 @@ productsRouter.get('/:category', async (request, response) => {
   }
 })
 
-productsRouter.get('/:id', async (request, response) => {
+productsRouter.get('/id/:id', async (request, response) => {
   try {
     const { id } = request.params
     console.log(" Entro en GET products by 1d ", id)
