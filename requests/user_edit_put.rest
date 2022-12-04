@@ -1,0 +1,11 @@
+PUT http://localhost:3001/api/users/638d2d483efb7fee8f85c6a6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGQxMjFhZmI0N2MyZWI0OGI0NjkyOSIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY3MDE5NTAxNCwiZXhwIjoxNjcwNzk5ODE0fQ._0ZFlq1lpddZQ6GLO99Opys3zwx9v11MKtLpfp7OXFE
+
+{
+  "id": "638d2d483efb7fee8f85c6a6",
+  "username": "Paisano Andd",
+  "name": "Mauricio Varela",
+  "type": "admin",
+  "password": "papacito"
+}
