@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@sentry/node": "6.2.0",
-    "@sentry/tracing": "6.2.0",
+    "@sentry/tracing": "6.0.0",
     "aws-sdk": "^2.1152.0",
     "bcrypt": "5.0.1",
     "cors": "2.8.5",
