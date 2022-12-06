@@ -7,8 +7,10 @@ usersRouter.get("/", async (request, response) => {
   try {
     console.log(" Entro en GET users");
     const users = await User.find({});
+    console.log(" users --- > ", users);
     response.status(201).json(users);
   } catch (error) {
+    console.log("  Entro ERRRORRRRR GET users ", error);
     return response.status(422).send(error);
   }
 });
