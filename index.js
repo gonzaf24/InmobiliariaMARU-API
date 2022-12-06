@@ -5,19 +5,12 @@ const Tracing = require("@sentry/tracing");
 const express = require("express");
 const app = express();
 const cors = require("cors");
-/* const User = require("./models/User");
-const Category = require("./models/Category");
-const Product = require("./models/Product"); */
 
 const notFound = require("./middleware/notFound.js");
 const handleErrors = require("./middleware/handleErrors.js");
-/* const userExtractor = require("./middleware/userExtractor");
-const categorysRouter = require("./controllers/categorys");
-const productsRouter = require("./controllers/products"); */
 const usersRouter = require("./controllers/users");
 const loginRouter = require("./controllers/login");
-/* const imagesRouter = require("./controllers/images");
- */
+
 app.use(cors());
 app.use(express.json());
 app.use("/images", express.static("images"));
