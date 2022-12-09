@@ -1,9 +1,12 @@
+
 POST http://localhost:3001/api/users
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOGQyZjIwM2VmYjdmZWU4Zjg1YzZhNyIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY3MDUxNjM3MiwiZXhwIjoxNjcxMTIxMTcyfQ.IKrn036ISItnuEo82FjpUkHnaj9dwD4B1SWsjqu3DH4
+
 
 {
   "username": "admin12345",
-  "name": "Aministrador",
+  "name": "admin12345",
   "type": "admin",
   "password": "admin12345"
 }
