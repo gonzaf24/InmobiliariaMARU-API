@@ -8,6 +8,7 @@ const notFound = require("./middleware/notFound.js");
 const handleErrors = require("./middleware/handleErrors.js");
 const usersRouter = require("./controllers/users");
 const loginRouter = require("./controllers/login");
+const imagesRouter = require("./controllers/images");
 
 app.use(cors());
 app.use(express.json());
@@ -22,6 +23,7 @@ app.get("/", (request, response) => {
 
 app.use("/api/users", usersRouter);
 app.use("/api/login", loginRouter);
+app.use("/api/images", imagesRouter);
 
 app.use(notFound);
 app.use(handleErrors);

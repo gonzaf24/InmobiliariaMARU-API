@@ -31,7 +31,6 @@ usersRouter.post("/", userExtractorAdmin, async (request, response) => {
     return response.status(201).json(storedUser);
   } catch (error) {
     console.log(error);
-    console.log("Error POST users ", error);
     return response.status(422).send;
   }
 });
@@ -40,25 +39,19 @@ usersRouter.put("/:id", userExtractorAdmin, (request, response, next) => {
   try {
     console.log(" Entro en PUT edit users");
     const { id } = request.params;
-    console.log(" id user ", id);
     const { name, type } = request.body;
-    console.log(" name and type ", name, type);
     const newUser = {
       name,
       type,
     };
-    console.log(" newUser to edit ", newUser);
     return User.findByIdAndUpdate(id, newUser, { new: true })
       .then((result) => {
-        console.log("result User.findByIdAndUpdate", result);
         return response.json(result);
       })
       .catch((error) => {
-        console.log("error User.findByIdAndUpdate", error);
         return response.status(422).send(error);
       });
   } catch (error) {
-    console.log("error al update user ", error);
     return response.status(422).send(error);
   }
 });
@@ -67,18 +60,14 @@ usersRouter.delete("/:id", userExtractorAdmin, (request, response, next) => {
   try {
     console.log(" Entro en DELETE users");
     const { id } = request.params;
-    console.log(" id user ", id);
     return User.findByIdAndRemove(id)
       .then((result) => {
-        console.log("result User.findByIdAndRemove", result);
         return response.json(result);
       })
       .catch((error) => {
-        console.log("error User.findByIdAndRemove", error);
         return response.status(422).send(error);
       });
   } catch (error) {
-    console.log("error al delete user ", error);
     return response.status(422).send;
   }
 });
