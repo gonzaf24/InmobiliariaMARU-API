@@ -9,6 +9,7 @@ loginRouter.post("/", async (request, response) => {
     const { body } = request;
     const { username, password } = body;
     const user = await User.findOne({ username });
+    console.log("user es : ", user);
 
     const passwordCorrect =
       user === null ? false : await bcrypt.compare(password, user.passwordHash);
