@@ -20,9 +20,8 @@ imagesRouter.post(
   userExtractor,
   async (request, response) => {
     try {
-      console.log(" Entro en POST images ");
-      let file = request.file;
-      const fileName = request.body.fileName;
+      const { file, body } = request;
+      const { fileName } = body;
       const fileStream = fs.createReadStream(file.path);
       const lastDot = fileName.lastIndexOf(".");
       const ext = fileName.substring(lastDot + 1);
@@ -34,44 +33,29 @@ imagesRouter.post(
         ContentType: `image/${ext}`,
         ACL: "public-read",
       };
-      const storedImage = await s3
-        .upload(uploadParams)
-        .promise()
-        .then((response) => response.Location)
-        .catch((e) => console.log("s3 error , ", e));
 
+      const storedImage = await s3.upload(uploadParams).promise();
       await unlinkFile(file.path);
-      response.send({ imagePath: storedImage });
+      return response.json({ imagePath: storedImage.Location });
     } catch (error) {
       console.log("error uploading image ", error);
-      console.log("fileName  ", fileName);
-      return response.status(404).send(error);
+      return response.status(500).send({ error: "Error uploading image" });
     }
   }
 );
 
-imagesRouter.delete("/:id", userExtractor, async (request, response, next) => {
+imagesRouter.delete("/:id", userExtractor, async (request, response) => {
   try {
-    console.log(" Entro en DELETE images ");
     const { id } = request.params;
-    var params = { Bucket: "alchimia", Key: id };
-    try {
-      await s3.headObject(params).promise();
-      // console.log("File Found in S3");
-      try {
-        await s3.deleteObject(params).promise();
-        return response.status(200).send(true);
-      } catch (error) {
-        // console.log("ERROR in file Deleting : " + JSON.stringify(error));
-        return response.status(404).send(error);
-      }
-    } catch (error) {
-      // console.log("File not Found ERROR : " + error);
-      return response.status(404).send(error);
-    }
+    const params = { Bucket: "alchimia", Key: id };
+
+    await s3.headObject(params).promise();
+    await s3.deleteObject(params).promise();
+
+    return response.status(200).send(true);
   } catch (error) {
-    console.log("error delete ", error);
-    return response.status(404).send(error);
+    console.log("error deleting image ", error);
+    return response.status(500).send({ error: "Error deleting image" });
   }
 });
 
