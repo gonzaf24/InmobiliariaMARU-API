@@ -2,26 +2,17 @@ const jwt = require("jsonwebtoken");
 
 module.exports = (request, response, next) => {
   const authorization = request.get("authorization");
-  let token = "";
 
-  if (authorization === undefined || authorization === null) {
-    console.log(" token extractor [[ " + authorization + " ]]");
-    return response.status(401).json({ error: "token missing or invalid" });
+  if (!authorization || !authorization.toLowerCase().startsWith("bearer")) {
+    return response.status(401).json({ error: "Token missing or invalid" });
   }
+  const token = authorization.substring(7);
 
-  if (authorization && authorization.toLowerCase().startsWith("bearer")) {
-    token = authorization.substring(7);
+  try {
+    const { id: userId } = jwt.verify(token, process.env.SECRET);
+    request.userId = userId;
+    next();
+  } catch (error) {
+    return response.status(401).json({ error: "Token missing or invalid" });
   }
-
-  const decodedToken = jwt.verify(token, process.env.SECRET);
-
-  if (!token || !decodedToken.id) {
-    return response.status(401).json({ error: "token missing or invalid" });
-  }
-
-  const { id: userId } = decodedToken;
-
-  request.userId = userId;
-
-  next();
 };
