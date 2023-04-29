@@ -1,11 +1,11 @@
 
 POST http://localhost:3001/api/houses
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4MTEzMTk3NywiZXhwIjoxNjgxNzM2Nzc3fQ.ElTxCk9Q7pjNDhNLEGBQXGAYCnTyzeB4v5poklSvxys
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4Mjc2NTM3MSwiZXhwIjoxNjgzMzcwMTcxfQ.jsUwee3ovAsKwdbiIvXdN9qHCewF2KLAAgQFMvfzSyk
 
 {
   "operation": "rent",
-  "price": 1100,
+  "price": 12300,
   "country": "España",
   "region": "Cataluña",
   "city": "Barcelona",
@@ -36,7 +36,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzN
   "constructionYear": "2010-01-01",
   "renovationYear": "2022-01-01",
   "antiquity": 12,
-  "observations": "Apartamento recién renovado con excelente ubicación en el corazón de Barcelona.",
+  "observations": "LA LA LA excelente ubicación en el corazón de Barcelona.",
   "ownerName": "Jorge Perez",
   "ownerPhone": "663456789",
   "ownerEmail": "jorge.perez@gmail.com",
@@ -56,6 +56,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzN
   "videos": [
     "https://example.com/video1.mp4",
     "https://example.com/video2.mp4"
+  ],
+  "documents": [
+    "https://example.com/document1.pdf",
+    "https://example.com/document2.pdf"
   ]
 }
 

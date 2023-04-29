@@ -48,6 +48,7 @@ const houseSchema = new Schema({
   showInMap: { type: Boolean },
   photos: [{ type: String }],
   videos: [{ type: String }],
+  documents: [{ type: String }],
 });
 
 houseSchema.set("toJSON", {
