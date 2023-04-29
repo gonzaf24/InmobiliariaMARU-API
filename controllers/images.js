@@ -39,23 +39,24 @@ imagesRouter.post(
       return response.json({ imagePath: storedImage.Location });
     } catch (error) {
       console.log("error uploading image ", error);
-      return response.status(500).send({ error: "Error uploading image" });
+      return response.status(404).send({ error: "Error uploading image" });
     }
   }
 );
 
 imagesRouter.delete("/:id", userExtractor, async (request, response) => {
   try {
+    console.log("entro en delete image");
     const { id } = request.params;
     const params = { Bucket: "alchimia", Key: id };
 
     await s3.headObject(params).promise();
     await s3.deleteObject(params).promise();
-
+    console.log("image deleted, out ");
     return response.status(200).send(true);
   } catch (error) {
     console.log("error deleting image ", error);
-    return response.status(500).send({ error: "Error deleting image" });
+    return response.status(404).send({ error: "Error deleting image" });
   }
 });
 

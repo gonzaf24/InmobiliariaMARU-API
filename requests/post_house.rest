@@ -1,0 +1,246 @@
+
+POST http://localhost:3001/api/houses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4MTEzMTk3NywiZXhwIjoxNjgxNzM2Nzc3fQ.ElTxCk9Q7pjNDhNLEGBQXGAYCnTyzeB4v5poklSvxys
+
+{
+  "operation": "rent",
+  "price": 1100,
+  "country": "España",
+  "region": "Cataluña",
+  "city": "Barcelona",
+  "neighborhood": "Eixample",
+  "postalCode": "08010",
+  "street": "Carrer de Balmes",
+  "addressNumber": "67",
+  "floor": "3",
+  "door": "2",
+  "stair": "B",
+  "propertyType": "apartment",
+  "rooms": 2,
+  "bathrooms": 1,
+  "size": 75,
+  "floors": 6,
+  "heatingCooling": "central",
+  "water": true,
+  "electricity": true,
+  "gas": true,
+  "furnished": true,
+  "pets": false,
+  "parking": false,
+  "pool": false,
+  "jacuzzi": false,
+  "garden": false,
+  "terrace": false,
+  "horizontal": false,
+  "constructionYear": "2010-01-01",
+  "renovationYear": "2022-01-01",
+  "antiquity": 12,
+  "observations": "Apartamento recién renovado con excelente ubicación en el corazón de Barcelona.",
+  "ownerName": "Jorge Perez",
+  "ownerPhone": "663456789",
+  "ownerEmail": "jorge.perez@gmail.com",
+  "title": "Alquiler de Piso en Eixample",
+  "description": "Luminoso y espacioso piso en una de las mejores zonas de Barcelona.",
+  "address": "Carrer de Balmes, 67, Barcelona, España",
+  "lat": 41.391692,
+  "lng": 2.159547,
+  "isAddress": true,
+  "exactPosition": true,
+  "showInMap": true,
+  "photos": [
+    "https://example.com/photo1.jpg",
+    "https://example.com/photo2.jpg",
+    "https://example.com/photo3.jpg"
+  ],
+  "videos": [
+    "https://example.com/video1.mp4",
+    "https://example.com/video2.mp4"
+  ]
+}
+
+###
+
+POST http://localhost:3001/api/houses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4MTEzMTk3NywiZXhwIjoxNjgxNzM2Nzc3fQ.ElTxCk9Q7pjNDhNLEGBQXGAYCnTyzeB4v5poklSvxys
+
+{
+  "operation": "sale",
+  "price": 850000,
+  "country": "Spain",
+  "region": "Catalonia",
+  "city": "Barcelona",
+  "neighborhood": "Sarrià-Sant Gervasi",
+  "postalCode": "08034",
+  "street": "Carrer de la Bonanova",
+  "addressNumber": "45",
+  "floor": null,
+  "door": null,
+  "stair": null,
+  "propertyType": "House",
+  "rooms": 5,
+  "bathrooms": 3,
+  "size": 280,
+  "floors": 3,
+  "heatingCooling": "Gas heating and air conditioning",
+  "water": true,
+  "electricity": true,
+  "gas": true,
+  "furnished": false,
+  "pets": true,
+  "parking": true,
+  "pool": true,
+  "jacuzzi": false,
+  "garden": true,
+  "terrace": true,
+  "horizontal": false,
+  "constructionYear": "1990-01-01",
+  "renovationYear": "2018-01-01",
+  "antiquity": 31,
+  "observations": "Amplia y luminosa casa ubicada en el barrio residencial de Sarrià-Sant Gervasi, con piscina y jardín privados.",
+  "ownerName": "Carlos Fernandez",
+  "ownerPhone": "+34 678 901 234",
+  "ownerEmail": "carlos.fernandez@example.com",
+  "title": "Venta de Casa en Sarrià-Sant Gervasi",
+  "description": "Hermosa casa de 5 habitaciones ubicada en una de las zonas más exclusivas de Barcelona.",
+  "address": "Carrer de la Bonanova, 45, 08034 Barcelona, Spain",
+  "lat": 41.400294,
+  "lng": 2.125190,
+  "isAddress": true,
+  "exactPosition": true,
+  "showInMap": true,
+  "photos": [
+    "https://example.com/photo1.jpg",
+    "https://example.com/photo2.jpg",
+    "https://example.com/photo3.jpg"
+  ],
+  "videos": [
+    "https://example.com/video1.mp4",
+    "https://example.com/video2.mp4"
+  ]
+}
+
+###
+
+POST http://localhost:3001/api/houses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4MTEzMTk3NywiZXhwIjoxNjgxNzM2Nzc3fQ.ElTxCk9Q7pjNDhNLEGBQXGAYCnTyzeB4v5poklSvxys
+
+{
+  "operation": "rent",
+  "price": 1200,
+  "country": "Spain",
+  "region": "Catalonia",
+  "city": "Barcelona",
+  "neighborhood": "Sant Antoni",
+  "postalCode": "08015",
+  "street": "Carrer del Comte Borrell",
+  "addressNumber": "67",
+  "floor": "3rd",
+  "door": "C",
+  "stair": "2",
+  "propertyType": "Apartment",
+  "rooms": 2,
+  "bathrooms": 1,
+  "size": 75,
+  "floors": 6,
+  "heatingCooling": "Central heating",
+  "water": true,
+  "electricity": true,
+  "gas": true,
+  "furnished": true,
+  "pets": false,
+  "parking": false,
+  "pool": false,
+  "jacuzzi": false,
+  "garden": false,
+  "terrace": true,
+  "horizontal": false,
+  "constructionYear": "2010-01-01",
+  "renovationYear": "2018-05-01",
+  "antiquity": 11,
+  "observations": "Cozy and modern apartment in the trendy neighborhood of Sant Antoni, just a few steps away from public transportation and some of the best restaurants and bars in the city.",
+  "ownerName": "Ana Rodriguez",
+  "ownerPhone": "+34 612 345 678",
+  "ownerEmail": "ana.rodriguez@example.com",
+  "title": "Cozy 2BR Apartment in Sant Antoni",
+  "description": "Beautiful 2 bedroom apartment located in the heart of Sant Antoni, with plenty of natural light and a charming terrace.",
+  "address": "Carrer del Comte Borrell, 67, 08015 Barcelona, Spain",
+  "lat": 41.379663,
+  "lng": 2.158494,
+  "isAddress": true,
+  "exactPosition": true,
+  "showInMap": true,
+  "photos": [
+    "https://example.com/photo1.jpg",
+    "https://example.com/photo2.jpg",
+    "https://example.com/photo3.jpg"
+  ],
+  "videos": [
+    "https://example.com/video1.mp4",
+    "https://example.com/video2.mp4"
+  ]
+}
+
+###
+
+POST http://localhost:3001/api/houses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4MTEzMTk3NywiZXhwIjoxNjgxNzM2Nzc3fQ.ElTxCk9Q7pjNDhNLEGBQXGAYCnTyzeB4v5poklSvxys
+
+{
+"operation": "rent",
+"price": 750,
+"country": "Spain",
+"region": "Catalonia",
+"city": "Barcelona",
+"neighborhood": "Sants",
+"postalCode": "08014",
+"street": "Carrer de Sants",
+"addressNumber": "256",
+"floor": "2nd",
+"door": "1",
+"stair": "B",
+"propertyType": "Apartment",
+"rooms": 2,
+"bathrooms": 1,
+"size": 60,
+"floors": 4,
+"heatingCooling": "Central heating",
+"water": true,
+"electricity": true,
+"gas": true,
+"furnished": true,
+"pets": false,
+"parking": false,
+"pool": false,
+"jacuzzi": false,
+"garden": false,
+"terrace": true,
+"horizontal": false,
+"constructionYear": "1990-01-01",
+"renovationYear": "2022-01-01",
+"antiquity": 32,
+"observations": "Cozy and comfortable apartment located in the heart of Sants, close to public transportation and shopping areas.",
+"ownerName": "Marta Lopez",
+"ownerPhone": "+34 612 345 678",
+"ownerEmail": "marta.lopez@example.com",
+"title": "Cozy 2BR Apartment in Sants",
+"description": "Lovely 2 bedroom apartment located in the charming neighborhood of Sants, perfect for couples or small families.",
+"address": "Carrer de Sants, 256, 08014 Barcelona, Spain",
+"lat": 41.377583,
+"lng": 2.138143,
+"isAddress": true,
+"exactPosition": true,
+"showInMap": true,
+"photos": [
+"https://example.com/photo1.jpg",
+"https://example.com/photo2.jpg",
+"https://example.com/photo3.jpg"
+],
+"videos": [
+"https://example.com/video1.mp4",
+"https://example.com/video2.mp4"
+]
+}
