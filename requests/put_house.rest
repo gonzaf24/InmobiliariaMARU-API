@@ -1,17 +1,17 @@
 PUT http://localhost:3001/api/houses/64341f9c0d346f1c6d9ed733
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4MTEzMTk3NywiZXhwIjoxNjgxNzM2Nzc3fQ.ElTxCk9Q7pjNDhNLEGBQXGAYCnTyzeB4v5poklSvxys
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4Mjc2NTM3MSwiZXhwIjoxNjgzMzcwMTcxfQ.jsUwee3ovAsKwdbiIvXdN9qHCewF2KLAAgQFMvfzSyk
 
 {
   "operation": "rent",
-  "price": 1000,
+  "price": 2000,
   "country": "España",
   "region": "Cataluña",
   "city": "Barcelona",
   "neighborhood": "Eixample",
   "postalCode": "08015",
   "street": "Carrer de Viladomat",
-  "addressNumber": "209",
+  "addressNumber": "229",
   "floor": "2",
   "door": "1",
   "stair": "A",
@@ -35,7 +35,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzN
   "constructionYear": "2000-01-01",
   "renovationYear": "2020-04-01",
   "antiquity": 21,
-  "observations": "Apartamento amplio y luminoso con excelentes vistas",
+  "observations": "Lala la",
   "ownerName": "Maria Lopez",
   "ownerPhone": "654987123",
   "ownerEmail": "maria.lopez@example.com",
@@ -46,5 +46,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzN
   "lng": 2.157475,
   "isAddress": true,
   "exactPosition": true,
-  "showInMap": true
+  "showInMap": true,
+  "photos": [],
+  "videos": [],
+  "documents": []
 }

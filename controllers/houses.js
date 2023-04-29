@@ -60,6 +60,7 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
       showInMap,
       photos,
       videos,
+      documents,
     } = request.body;
 
     const newHouse = new House({
@@ -109,6 +110,7 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
       showInMap,
       photos,
       videos,
+      documents,
     });
     const savedHouse = await newHouse.save();
     response.status(201).json(savedHouse);
@@ -171,6 +173,7 @@ housesRouter.put("/:id", userExtractorAdmin, async (request, response) => {
       showInMap,
       photos,
       videos,
+      documents,
     } = request.body;
 
     house.operation = operation;
@@ -219,6 +222,7 @@ housesRouter.put("/:id", userExtractorAdmin, async (request, response) => {
     house.showInMap = showInMap;
     house.photos = photos;
     house.videos = videos;
+    house.documents = documents;
 
     const updatedHouse = await house.save();
     response.json(updatedHouse);
