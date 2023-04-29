@@ -13,7 +13,6 @@ module.exports = async (request, response, next) => {
   try {
     const { id: userId } = jwt.verify(token, process.env.SECRET);
     const user = await User.findById(userId);
-
     if (!user || user.type !== "admin") {
       return response
         .status(406)

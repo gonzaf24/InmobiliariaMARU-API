@@ -1,10 +1,10 @@
-const { Schema, model } = require('mongoose')
-const uniqueValidator = require('mongoose-unique-validator')
+const { Schema, model } = require("mongoose");
+const uniqueValidator = require("mongoose-unique-validator");
 
 const categorySchema = new Schema({
   idName: {
     type: String,
-    unique: true
+    unique: true,
   },
   categoryName: String,
   type: String,
@@ -12,18 +12,18 @@ const categorySchema = new Schema({
   isActive: Boolean,
   newCategory: Boolean,
   discount: Boolean,
-  position: Number
-})
+  position: Number,
+});
 
-categorySchema.set('toJSON', {
+categorySchema.set("toJSON", {
   transform: (document, returnedObject) => {
-    returnedObject.id = returnedObject._id
-    delete returnedObject.__v
-  }
-})
+    returnedObject.id = returnedObject._id;
+    delete returnedObject.__v;
+  },
+});
 
-categorySchema.plugin(uniqueValidator)
+categorySchema.plugin(uniqueValidator);
 
-const Category = model('Category', categorySchema)
+const Category = model("Category", categorySchema);
 
-module.exports = Category
+module.exports = Category;
