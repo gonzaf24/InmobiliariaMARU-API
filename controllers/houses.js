@@ -12,6 +12,7 @@ housesRouter.get("/", async (request, response) => {
 });
 
 housesRouter.post("/", userExtractorAdmin, async (request, response) => {
+  console.log("entro en post housesRouter");
   try {
     const {
       operation,
@@ -115,6 +116,7 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
     const savedHouse = await newHouse.save();
     response.status(201).json(savedHouse);
   } catch (error) {
+    console.log("entro en post housesRouter error", error);
     response.status(422).send(error);
   }
 });
