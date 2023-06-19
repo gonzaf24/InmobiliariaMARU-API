@@ -38,7 +38,7 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
       gas,
       furnished,
       pets,
-      parkingIncluid,
+      parkingIncluded,
       parkingOptional,
       parkingPrice,
       pool,
@@ -92,7 +92,7 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
       gas,
       furnished,
       pets,
-      parkingIncluid,
+      parkingIncluded,
       parkingOptional,
       parkingPrice,
       pool,
@@ -160,7 +160,7 @@ housesRouter.put("/:id", userExtractorAdmin, async (request, response) => {
       gas,
       furnished,
       pets,
-      parkingIncluid,
+      parkingIncluded,
       parkingOptional,
       parkingPrice,
       pool,
@@ -213,7 +213,7 @@ housesRouter.put("/:id", userExtractorAdmin, async (request, response) => {
     house.gas = gas;
     house.furnished = furnished;
     house.pets = pets;
-    house.parkingIncluid = parkingIncluid;
+    house.parkingIncluded = parkingIncluded;
     house.parkingOptional = parkingOptional;
     house.parkingPrice = parkingPrice;
     house.pool = pool;
