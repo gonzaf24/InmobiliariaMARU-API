@@ -25,7 +25,7 @@ const houseSchema = new Schema({
   gas: { type: Boolean },
   furnished: { type: Boolean },
   pets: { type: Boolean },
-  parkingIncluid: { type: Boolean },
+  parkingIncluded: { type: Boolean },
   parkingOptional: { type: Boolean },
   parkingPrice: { type: Number },
   pool: { type: Boolean },
