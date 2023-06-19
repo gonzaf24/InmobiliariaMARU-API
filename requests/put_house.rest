@@ -32,6 +32,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzN
   "garden": false,
   "terrace": false,
   "horizontal": false,
+  "exterior": true,
+  "elevator": true,
   "constructionYear": "2000-01-01",
   "renovationYear": "2020-04-01",
   "antiquity": 21,
