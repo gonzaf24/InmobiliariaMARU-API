@@ -44,6 +44,8 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
       garden,
       terrace,
       horizontal,
+      exterior,
+      elevator,
       constructionYear,
       renovationYear,
       antiquity,
@@ -94,6 +96,8 @@ housesRouter.post("/", userExtractorAdmin, async (request, response) => {
       garden,
       terrace,
       horizontal,
+      exterior,
+      elevator,
       constructionYear,
       renovationYear,
       antiquity,
@@ -158,6 +162,8 @@ housesRouter.put("/:id", userExtractorAdmin, async (request, response) => {
       garden,
       terrace,
       horizontal,
+      exterior,
+      elevator,
       constructionYear,
       renovationYear,
       antiquity,
@@ -207,6 +213,8 @@ housesRouter.put("/:id", userExtractorAdmin, async (request, response) => {
     house.garden = garden;
     house.terrace = terrace;
     house.horizontal = horizontal;
+    house.exterior = exterior;
+    house.elevator = elevator;
     house.constructionYear = constructionYear;
     house.renovationYear = renovationYear;
     house.antiquity = antiquity;

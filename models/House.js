@@ -31,6 +31,8 @@ const houseSchema = new Schema({
   garden: { type: Boolean },
   terrace: { type: Boolean },
   horizontal: { type: Boolean },
+  exterior: { type: Boolean },
+  elevator: { type: Boolean },
   constructionYear: { type: Date },
   renovationYear: { type: Date },
   antiquity: { type: Number },
