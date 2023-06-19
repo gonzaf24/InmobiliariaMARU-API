@@ -1,6 +1,6 @@
-PUT http://localhost:3001/api/houses/64341f9c0d346f1c6d9ed733
+PUT http://localhost:3001/api/houses/649098c3c34a070014a9323d
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4Mjc2NTM3MSwiZXhwIjoxNjgzMzcwMTcxfQ.jsUwee3ovAsKwdbiIvXdN9qHCewF2KLAAgQFMvfzSyk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOTI3ZDAzNGI2MmY0MGMzODExZjYwZiIsInVzZXJuYW1lIjoiYWRtaW4xMjM0NSIsImlhdCI6MTY4NzE5ODA3NCwiZXhwIjoxNjg3ODAyODc0fQ.Rpu57rJPM1P-etGSUiVuIElVyLYYmotzhgu0w-Yo16Y
 
 {
   "operation": "rent",
