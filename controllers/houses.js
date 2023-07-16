@@ -15,19 +15,19 @@ housesRouter.get("/", async (request, response) => {
 housesRouter.get("/:id", async (request, response) => {
   const id = request.params.id;
   if (!mongoose.Types.ObjectId.isValid(id)) {
-    return response.status(404).send({ error: "House not found" });
+    return response.status(404).send({ error: "House not found", code: 404 });
   }
   try {
     const house = await House.findById(id);
     if (house) {
       response.json(house);
     } else {
-      response.status(404).send({ error: "House not found" });
+      response.status(404).send({ error: "House not found", code: 404 });
     }
   } catch (error) {
     response
       .status(500)
-      .send({ error: "An error occurred while fetching the house" });
+      .send({ error: "An error occurred while fetching the house", code: 500 });
   }
 });
 
