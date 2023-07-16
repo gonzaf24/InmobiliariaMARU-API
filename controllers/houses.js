@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const housesRouter = require("express").Router();
 const House = require("../models/House");
 const userExtractorAdmin = require("../middleware/userExtractorAdmin");
@@ -8,6 +9,25 @@ housesRouter.get("/", async (request, response) => {
     response.json(houses);
   } catch (error) {
     response.status(422).send(error);
+  }
+});
+
+housesRouter.get("/:id", async (request, response) => {
+  const id = request.params.id;
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    return response.status(404).send({ error: "House not found" });
+  }
+  try {
+    const house = await House.findById(id);
+    if (house) {
+      response.json(house);
+    } else {
+      response.status(404).send({ error: "House not found" });
+    }
+  } catch (error) {
+    response
+      .status(500)
+      .send({ error: "An error occurred while fetching the house" });
   }
 });
 

@@ -1,0 +1,1 @@
+GET http://localhost:3001/api/houses/64b2aefa6713c60014ebe60a2
